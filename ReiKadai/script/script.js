@@ -15,7 +15,7 @@ new Vue({
     methods: {
       changeStyle() {
         // ★穴埋め★ スタイルのオンオフを切り替える
-        XXXXXXXX
+        this.isChanged = !this.isChanged;
       },
       drawCards() {
         // シャッフルして最初の5枚を選ぶ
@@ -42,7 +42,7 @@ new Vue({
       }
     },
     // ★穴埋め★ 算出プロパティ
-    XXXXXXXX {
+    computed: {
       bindStyle() {
         // レンジに応じたスタイルを適用する
         return `font-size: ${this.scale}px; color: rgb(${this.red},20,100)`
